@@ -59,7 +59,7 @@ public class ValidacoesListaTests
         var resultadoEsperado = new List<int> { 10, 14, 16, 18 };
         
         // Act
-        var resultado = _validacoes.MultiplicarElementosPorDois(lista);
+        var resultado = _validacoes.MultiplicarNumerosLista(lista, 2);
         // Assert
         Assert.Equal(resultadoEsperado,resultado);
     }
