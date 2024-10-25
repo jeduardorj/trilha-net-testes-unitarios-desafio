@@ -49,7 +49,7 @@ public class ValidacoesListaTests
         Assert.False(resultado);
     }
 
-    //TODO: Corrigir a anotação [Fact]
+    [Fact]
     public void DeveMultiplicarOsElementosDaListaPor2()
     {
         //TODO: Implementar método de teste
@@ -59,8 +59,9 @@ public class ValidacoesListaTests
         var resultadoEsperado = new List<int> { 10, 14, 16, 18 };
         
         // Act
-
+        var resultado = _validacoes.MultiplicarElementosPorDois(lista);
         // Assert
+        Assert.Equal(resultadoEsperado,resultado);
     }
 
     [Fact]
